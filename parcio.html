@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediCare - Healthcare Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background: #2563eb;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18px;
+    }
+
+    .logo-text {
+      font-family: 'Pacifico', serif;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #666;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    .btn {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: #2563eb;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #2563eb;
+      border: 1px solid #2563eb;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #dbeafe 0%, #c7d2fe 100%);
+      padding: 4rem 0;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 80px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #1f2937;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: #4b5563;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .features {
+      padding: 4rem 0;
+      background: white;
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #1f2937;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      align-items: stretch;
+    }
+
+    .feature-card {
+      text-align: center;
+      padding: 2rem;
+      background: #f8fafc;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .feature-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 24px;
+      color: white;
+    }
+
+    footer {
+      background: #1f2937;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header/Navbar -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="ri-heart-pulse-line"></i>
+        </div>
+        <span class="logo-text">MediCare</span>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div>
+
+		<a href="#login" class="btn btn-secondary">Login</a>
+		<a href="#home" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Home Section -->
+  <section id="home" class="hero">
+  <div class="container">
+    <h1>Accessible Healthcare for Everyone</h1>
+    <p>Connecting patients and healthcare providers through a secure, user-friendly platform</p>
+    <div class="hero-buttons">
+      <a href="patient.html" class="btn btn-primary">Patient Login</a>
+      <a href="provider.html" class="btn btn-secondary">Healthcare Provider Login</a>
+	</div>
+	</div>
+	</section>
+  
+<!-- About Section -->
+<section id="about" class="features">
+
+  <!-- About Section -->
+  <section id="about" class="features">
+    <div class="container">
+      <h2>Why Choose MediCare?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon" style="background: #2563eb;">
+            <i class="ri-shield-check-line"></i>
+          </div>
+          <h3>Secure & Private</h3>
+          <p>Your health information is protected with enterprise-grade security.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background: #16a34a;">
+            <i class="ri-time-line"></i>
+          </div>
+          <h3>24/7 Access</h3>
+          <p>Access medical services anytime, anywhere, day or night.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background: #9333ea;">
+            <i class="ri-user-heart-line"></i>
+          </div>
+          <h3>Personalized Care</h3>
+          <p>Receive care tailored to your unique medical needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="features">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon" style="background: #3b82f6;">
+            <i class="ri-stethoscope-line"></i>
+          </div>
+          <h3>Online Consultation</h3>
+          <p>Talk to licensed doctors anytime, anywhere.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background: #10b981;">
+            <i class="ri-hospital-line"></i>
+          </div>
+          <h3>Hospital Locator</h3>
+          <p>Find the nearest accredited hospitals easily.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background: #f59e0b;">
+            <i class="ri-mental-health-line"></i>
+          </div>
+          <h3>Mental Health Support</h3>
+          <p>Access to therapists and counseling services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+	  <!-- Contact Section -->
+	  <section id="contact" class="features" style="background: #f3f4f6;">
+		<div class="container">
+	<!-- Contact Section -->
+	<section id="contact" class="features" style="background: #f3f4f6;">
+	  <div class="container">
+		<h2>Contact Us</h2>
+		<p style="text-align: center; max-width: 600px; margin: 0 auto 2rem;">
+		  We'd love to hear from you. Reach us through the info below.
+		</p>
+		<div class="features-grid">
+		  <div class="feature-card">
+			<div class="feature-icon" style="background: #2563eb;">
+			  <i class="ri-mail-line"></i>
+			</div>
+			<h3>Email</h3>
+			<p>
+			  <a href="mailto:fqparcio4412qc@student.fatima.edu.ph" style="color: inherit; text-decoration: underline;">
+				fqparcio4412qc@student.fatima.edu.ph
+			  </a>
+			</p>
+		  </div>
+		  <div class="feature-card">
+			<div class="feature-icon" style="background: #16a34a;">
+			  <i class="ri-phone-line"></i>
+			</div>
+			<h3>Phone</h3>
+			<p>+63 912 345 6789</p>
+		  </div>
+		  <div class="feature-card">
+			<div class="feature-icon" style="background: #f59e0b;">
+			  <i class="ri-map-pin-line"></i>
+			</div>
+			<h3>Address</h3>
+			<p>123 MediCare St., Metro Manila</p>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	
+	  <!-- AI Healthcare Tools Section -->
+		<section id="ai-help" class="features" style="background: #f3f4f6; margin-top: 2rem; text-align: center; padding: 2rem;">
+	<div class="container">
+      <h2>Health AI Tools</h2>
+      <p>Get smart, AI-driven health insights and triage support:</p>
+      <div class="features-grid" style="justify-content: center;">
+        <div>
+          <a href="https://medical.chat-data.com" target="_blank" class="btn btn-primary">Medical Chat AI</a>
+        </div>
+        <div>
+          <a href="https://www.doctronic.ai" target="_blank" class="btn btn-primary">Doctronic AI Doctor</a>
+        </div>
+        <div>
+          <a href="https://www.livehealthily.com" target="_blank" class="btn btn-primary">Healthily (Your.MD)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+	<!-- Footer -->
+	<footer>
+	  <div class="container">
+		<p>&copy; 2025 MediCare.</p>
+	  </div>
+	</footer>
